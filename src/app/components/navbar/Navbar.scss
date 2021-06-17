@@ -1,0 +1,126 @@
+@use "src/app/stylesheets/palette" as palette;
+@use "src/app/stylesheets/constants" as constants;
+
+.navbar {
+    background-color: palette.$colorBackground;
+
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+
+    a {
+        color: palette.$colorOnBackground;
+        text-decoration: none;
+
+        &:visited {
+            color: palette.$colorOnBackground;
+            text-decoration: none;
+        }
+    }
+
+    &--elevated {
+        @extend .navbar;
+        -webkit-box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow:    1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+        box-shadow:         1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+    }
+
+    @media screen and (min-width: constants.$smallScreen) {
+        -webkit-box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow:    1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+        box-shadow:         1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+    }
+}
+
+.nav {
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 100%;
+    display: flex;
+
+    .home {
+        font-family: 'Inter', sans-serif;
+        font-size: 13pt;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    .logo {
+        margin-right: 10px;
+        width: 36px;
+        height: 36px;
+        align-self: center;
+    }
+
+    .link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 11pt;
+        font-weight: 400;
+        align-self: center;
+        padding: 16px 0;
+
+        &:hover {
+            color: palette.$colorPrimary;
+        }
+    }
+
+    &--menu-button {
+        width: 24px;
+        height: 24px;
+        align-self: center;
+        cursor: pointer;
+        display: none;
+
+        @extend .nav;
+        @media screen and (max-width: constants.$smallScreen) {
+            display: block;
+        }
+    }
+
+    &--hide-on-small-screen {
+        @extend .nav;
+        @media screen and (max-width: constants.$smallScreen) {
+            display: none;
+        }
+    }
+}
+
+.nav-divider {
+    flex-grow: 1;
+}
+
+.nav-drawer {
+    background-color: palette.$colorBackground;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    left: 0;
+
+    a {
+        text-align: start;
+        color: palette.$colorOnBackground;
+        text-decoration: none;
+
+        &:visited {
+            color: palette.$colorOnBackground;
+            text-decoration: none;
+        }
+    }
+
+    -webkit-box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow:    1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+    box-shadow:         1px 1px 3px 4px rgba(0, 0, 0, 0.14);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 120%, 0% 120%);
+}
+
+.active {
+    @media screen and (max-width: constants.$smallScreen) {
+        display: flex;
+    }
+}

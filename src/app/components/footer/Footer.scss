@@ -1,0 +1,20 @@
+@use "src/app/stylesheets/palette" as palette;
+
+.footer {
+    background-color: palette.$colorBackgroundFooter;
+    height: 24px;
+    color: palette.$colorOnBackground;
+    text-align: center;
+    padding: 40px;
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+
+        &:visited {
+            color: palette.$colorOnBackground;
+            text-decoration: none;
+        }
+    }
+}
+

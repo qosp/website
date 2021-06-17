@@ -1,0 +1,45 @@
+@use "src/app/stylesheets/palette" as palette;
+
+.downloadScreen {
+  padding: 6%;
+  background-color: palette.$colorBackground;
+
+  h1, p {
+    text-align: center;
+  }
+
+}
+
+.stores {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store {
+  text-align: center;
+  padding: 16px 32px;
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  .store-logo {
+    margin: 10px 0;
+    max-width:200px;
+    height:auto;
+  }
+
+  &--recommended {
+    @extend .store;
+    background-color: palette.$colorPrimaryLight;
+    border: solid palette.$colorPrimary 1.5px;
+    border-radius: 16px;
+
+    .recommended-indicator {
+      color: palette.$colorPrimary;
+      font-weight: 600;
+    }
+  }
+}

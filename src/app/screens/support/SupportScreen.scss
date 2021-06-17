@@ -1,0 +1,10 @@
+@use "src/app/stylesheets/palette" as palette;
+
+.supportScreen {
+  padding: 6%;
+
+  h1, p {
+    text-align: center;
+  }
+
+}
