@@ -3,6 +3,7 @@ import './DownloadScreen.scss';
 
 import FDroidLogo from '../../assets/fdroid.png'
 import PlayStoreLogo from '../../assets/play_store.png'
+import {PLAY_STORE_LINK} from "../../utils/Constants";
 
 export const DownloadScreen = () => {
   return (
@@ -11,8 +12,8 @@ export const DownloadScreen = () => {
           <p>You can download Quillnote from the following app stores:</p>
 
           <div className={"stores"}>
-              <Store name={"F-Droid"} image={FDroidLogo} link={""} isRecommended={true}/>
-              <Store name={"Play Store"} image={PlayStoreLogo} link={""}/>
+              <Store name={"F-Droid"} image={FDroidLogo} link={PLAY_STORE_LINK} isRecommended={true}/>
+              <Store name={"Play Store"} image={PlayStoreLogo} link={PLAY_STORE_LINK}/>
           </div>
 
           <p>
