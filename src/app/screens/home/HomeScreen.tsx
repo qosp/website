@@ -1,5 +1,5 @@
 import React from 'react';
-import DevicesPhoto from '../../assets/devices.png';
+import DevicesPhoto from '../../assets/devices_1024x1024.png';
 
 import MarkdownFeature from '../../assets/screenshot_markdown.png';
 import RemindersFeature from '../../assets/screenshot_reminder.png';
