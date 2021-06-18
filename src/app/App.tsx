@@ -9,7 +9,7 @@ import {
     Route,
 } from 'react-router-dom';
 import {DownloadScreen} from "./screens/download/DownloadScreen";
-import {SupportScreen} from "./screens/support/SupportScreen";
+import {PrivacyPolicyScreen} from "./screens/privacy/PrivacyPolicyScreen";
 
 export default function App() {
     return (
@@ -20,10 +20,10 @@ export default function App() {
                     <Route exact path="/" component={HomeScreen}/>
                     <Route path="/download" component={DownloadScreen}/>
                     <Route path="/support" component={HomeScreen}/>
+                    <Route path={"/privacy"} component={PrivacyPolicyScreen}/>
                 </Switch>
+                <Footer/>
             </Router>
-
-            <Footer/>
         </div>
     );
 }
