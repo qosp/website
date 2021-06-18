@@ -9,7 +9,7 @@ export const Footer = () => {
           <p>
               Copyright © 2021 <a target="_blank" rel="noreferrer" href={DEV_GITHUB_URL}>Michael Soultanidis</a>
               <br/><br/>
-              <Link to={"/privacy"}>Privacy Policy</Link>
+              <Link to={"/privacy"} className={"link"}>Privacy Policy</Link>
               <br/><br/>
           </p>
       </div>
