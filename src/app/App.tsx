@@ -4,7 +4,7 @@ import {Navbar} from "./components/navbar/Navbar";
 import {Footer} from "./components/footer/Footer";
 import {HomeScreen} from "./screens/home/HomeScreen";
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Switch,
     Route,
 } from 'react-router-dom';
