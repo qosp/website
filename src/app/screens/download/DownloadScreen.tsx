@@ -15,7 +15,10 @@ export const DownloadScreen = () => {
               <Store name={"Play Store"} image={PlayStoreLogo} link={""}/>
           </div>
 
-
+          <p>
+              or you can download directly the APK file from <a href={"#"} target="_blank" rel="noreferrer">here</a>.
+          </p>
+          <br/>
           <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
       </div>
   );

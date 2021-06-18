@@ -29,7 +29,7 @@ export const Navbar = () => {
                     <NavLink text="Download" path={"/download"} hideOnSmallScreen={true}/>
                     <NavDivider/>
                     {/*<NavLink text="Support" path={"/support"} hideOnSmallScreen={true}/>*/}
-                    <NavLink text="View at GitHub" path={GIT_REPO_URL} isExternal={true} hideOnSmallScreen={true}/>
+                    <NavLink text="View on GitHub" path={GIT_REPO_URL} isExternal={true} hideOnSmallScreen={true}/>
 
                     <MdMenu className={"nav--menu-button"} onClick={toggleDrawerMenu}/>
                 </div>
@@ -39,7 +39,7 @@ export const Navbar = () => {
                     <NavLink text="Download" path={"/download"}/>
                     <NavDivider/>
                     {/*<NavLink text="Support" path={"/support"}/>*/}
-                    <NavLink text="View at GitHub" path={GIT_REPO_URL} isExternal={true}/>
+                    <NavLink text="View on GitHub" path={GIT_REPO_URL} isExternal={true}/>
                 </div>
             </MenuToggleProvider>
         </>

@@ -6,15 +6,5 @@
     color: palette.$colorOnBackground;
     text-align: center;
     padding: 40px;
-
-    a {
-        font-weight: 600;
-        text-decoration: none;
-
-        &:visited {
-            color: palette.$colorOnBackground;
-            text-decoration: none;
-        }
-    }
 }
 

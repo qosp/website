@@ -25,13 +25,12 @@ const HeaderSection = () => {
             <div className={"promoText"}>
                 <h1>Take notes, <br/> everywhere.</h1>
                 <p>
-                    With Quillnote you can take beautiful markdown notes whenever you feel inspired. Organize them in notebooks and with tags.
-                    Keep everything in one place by attaching related files to them.
-                    Make task lists and set reminders to stay organized.
+                    With Quillnote you can take beautiful markdown notes whenever you feel inspired. Place them in notebooks and tag them accordingly.
+                    Make task lists, set reminders and keep everything in one place by attaching related files to stay organized.
                 </p>
                 <h2>100% Free & Open Source Software</h2>
                 <p>
-                    Quillnote is fully free and open-source. Quillnote will never show you ads, ask you for permissions it does not need or upload your notes anywhere without you knowing.
+                    Quillnote is fully free and open-source. It will never show you ads, ask you for unnecessary permissions or upload your notes anywhere without you knowing.
                 </p>
                 <BigButton path={"/download"}/>
             </div>
@@ -42,7 +41,7 @@ const HeaderSection = () => {
 const FeaturesSection = () => {
     let markdown_description = "Markdown lets you take notes with style. You can write in bold or italics, add headings, code blocks and much more."
     let reminders_description = "Is your friend's birthday coming up? You can set reminders for events you do not want to miss."
-    let tasklist_description = "Organize your life with task lists. Add new tasks, re-order them if you wish and when you're done with them, tick them or swipe them away."
+    let tasklist_description = "Organize your life with task lists. Add new tasks, re-order them and when you're done, tick them or swipe them away."
 
     return (
         <div className="featuresSection">
