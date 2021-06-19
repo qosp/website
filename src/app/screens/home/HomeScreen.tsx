@@ -25,8 +25,8 @@ const HeaderSection = () => {
             <div className={"promoText"}>
                 <h1>Take notes, <br/> everywhere.</h1>
                 <p>
-                    With Quillnote you can take beautiful markdown notes whenever you feel inspired. Place them in notebooks and tag them accordingly.
-                    Make task lists, set reminders and keep everything in one place by attaching related files to stay organized.
+                    With Quillnote, you can take beautiful markdown notes whenever you feel inspired. Place them in notebooks and tag them accordingly.
+                    Stay organized by making task lists, set reminders and keep everything in one place by attaching related files.
                 </p>
                 <h2>100% Free & Open Source Software</h2>
                 <p>
