@@ -3,7 +3,7 @@ import './DownloadScreen.scss';
 
 import FDroidLogo from '../../assets/fdroid.png'
 import PlayStoreLogo from '../../assets/play_store.png'
-import {PLAY_STORE_LINK} from "../../utils/Constants";
+import {LATEST_APK_URL, PLAY_STORE_LINK} from "../../utils/Constants";
 
 export const DownloadScreen = () => {
   return (
@@ -17,7 +17,7 @@ export const DownloadScreen = () => {
           </div>
 
           <p>
-              or you can download directly the APK file from <a href={"#"} target="_blank" rel="noreferrer">here</a>.
+              or you can download directly the APK file from <a href={LATEST_APK_URL} target="_blank" rel="noreferrer">here</a>.
           </p>
           <br/>
           <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
