@@ -1,20 +1,24 @@
 @use "src/app/stylesheets/palette" as palette;
 @use "src/app/stylesheets/constants" as constants;
 
-.homeScreen {
+.home-screen {
     display: flex;
     flex-direction: column;
 }
 
-.headerSection {
-    background-color: palette.$colorPrimaryLight;
+.header {
     padding: 6%;
-
     display: flex;
     flex-direction: row;
 }
 
-.featuresSection {
+.primary-section {
+    display: flex;
+    justify-content: center;
+    background-color: palette.$colorPrimaryLight;
+}
+
+.features-section {
     padding: 50px 5%;
     display: flex;
     flex-direction: row;
@@ -55,7 +59,7 @@
     }
 }
 
-.promoText {
+.promo-text {
     margin: 0 10%;
     align-self: center;
 

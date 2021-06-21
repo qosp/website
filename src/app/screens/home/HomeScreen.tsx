@@ -10,7 +10,7 @@ import {BigButton} from "../../components/common/BigButton";
 
 export const HomeScreen = () => {
   return (
-      <div className="homeScreen">
+      <div className="home-screen">
         <HeaderSection/>
         <FeaturesSection/>
       </div>
@@ -20,19 +20,21 @@ export const HomeScreen = () => {
 
 const HeaderSection = () => {
     return (
-        <div className="headerSection">
-            <img src={DevicesPhoto} className={"promo-devices"} alt={"Devices running Quillnote."}/>
-            <div className={"promoText"}>
-                <h1>Take notes, <br/> everywhere.</h1>
-                <p>
-                    With Quillnote, you can take beautiful markdown notes whenever you feel inspired. Place them in notebooks and tag them accordingly.
-                    Stay organized by making task lists, set reminders and keep everything in one place by attaching related files.
-                </p>
-                <h2>100% Free & Open Source Software</h2>
-                <p>
-                    Quillnote is fully free and open-source. It will never show you ads, ask you for unnecessary permissions or upload your notes anywhere without you knowing.
-                </p>
-                <BigButton path={"/download"}/>
+        <div className={"primary-section"}>
+            <div className="header">
+                <img src={DevicesPhoto} className={"promo-devices"} alt={"Devices running Quillnote."}/>
+                <div className={"promo-text"}>
+                    <h1>Take notes, <br/> everywhere.</h1>
+                    <p>
+                        With Quillnote, you can take beautiful markdown notes whenever you feel inspired. Place them in notebooks and tag them accordingly.
+                        Stay organized by making task lists, set reminders and keep everything in one place by attaching related files.
+                    </p>
+                    <h2>100% Free & Open Source Software</h2>
+                    <p>
+                        Quillnote is fully free and open-source. It will never show you ads, ask you for unnecessary permissions or upload your notes anywhere without you knowing.
+                    </p>
+                    <BigButton path={"/download"} text={"Get Quillnote"}/>
+                </div>
             </div>
         </div>
     );
@@ -44,7 +46,7 @@ const FeaturesSection = () => {
     let tasklist_description = "Organize your life with task lists. Add new tasks, re-order them and when you're done, tick them or swipe them away."
 
     return (
-        <div className="featuresSection">
+        <div className="features-section">
             <Feature title={"Markdown"} description={markdown_description} image={MarkdownFeature}/>
             <Feature title={"Task lists"} description={tasklist_description} image={TaskListFeature}/>
             <Feature title={"Reminders"} description={reminders_description} image={RemindersFeature}/>

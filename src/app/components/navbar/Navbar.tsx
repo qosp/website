@@ -28,7 +28,7 @@ export const Navbar = () => {
                     <NavHome/>
                     <NavLink text="Download" path={"/download"} hideOnSmallScreen={true}/>
                     <NavDivider/>
-                    {/*<NavLink text="Support" path={"/support"} hideOnSmallScreen={true}/>*/}
+                    <NavLink text="Support the project" path={"/support"} hideOnSmallScreen={true}/>
                     <NavLink text="View on GitHub" path={GIT_REPO_URL} isExternal={true} hideOnSmallScreen={true}/>
 
                     <MdMenu className={"nav--menu-button"} onClick={toggleDrawerMenu}/>
@@ -38,7 +38,7 @@ export const Navbar = () => {
                 <div className={menuShowing ? "nav-drawer active" : "nav-drawer"}>
                     <NavLink text="Download" path={"/download"}/>
                     <NavDivider/>
-                    {/*<NavLink text="Support" path={"/support"}/>*/}
+                    <NavLink text="Support the project" path={"/support"}/>
                     <NavLink text="View on GitHub" path={GIT_REPO_URL} isExternal={true}/>
                 </div>
             </MenuToggleProvider>

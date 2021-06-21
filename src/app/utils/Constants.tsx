@@ -1,4 +1,7 @@
 export const GIT_REPO_URL = "https://github.com/msoultanidis/quillnote"
 export const DEV_GITHUB_URL = "https://github.com/msoultanidis"
 export const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=org.qosp.notes"
+export const FDROID_LINK = ""
 export const LATEST_APK_URL = "https://github.com/msoultanidis/quillnote/releases/latest"
+export const DONATE_LIBERA_LINK = "https://en.liberapay.com/Quillnote/"
+export const DONATE_FDROID_LINK = "https://f-droid.org/en/donate/"
